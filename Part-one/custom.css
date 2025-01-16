@@ -1,0 +1,80 @@
+/* Apply full height to the body and remove default margins */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;  /* Set a nice default font */
+}
+
+/* Set a background image */
+body {
+    background: url('https://via.placeholder.com/1500') no-repeat center center fixed;
+    background-size: cover;  /* Make sure the background image covers the entire page */
+}
+
+/* Center the form both horizontally and vertically */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px; /* Add padding to the container */
+}
+
+/* Form Styling */
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    padding: 30px; /* Add padding inside the form */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 400px;  /* Limit form width */
+    margin: 20px;  /* Margin around the form */
+}
+
+/* Label Styling */
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input field styling */
+.form-control {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;  /* Rounded input fields */
+    width: 100%;
+    margin-bottom: 15px;  /* Space between inputs */
+}
+
+/* Error message styling */
+.form-text {
+    font-size: 0.9rem;
+    color: red;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Button styling */
+.btn-primary {
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;  /* Rounded button */
+    width: 100%;  /* Make the button span the width of the form */
+    background-color: #007bff;  /* Customize the button color */
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;  /* Darker button color on hover */
+}
+
+/* Ensure responsive design for mobile */
+@media (max-width: 576px) {
+    form {
+        max-width: 90%; /* Make the form take up more space on small screens */
+    }
+}
