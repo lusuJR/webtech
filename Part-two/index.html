@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CTU Greeting App</title>
+    <title>CTU Greeting Maker</title>
 
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -15,14 +15,14 @@
 
 <body>
 
-    <div class="container">
+    <div class="form-container">
         <h1 class="title">Greeting Maker</h1>
 
-        <div class="input-group">
+        <form class="form">
             <label for="name" class="input-label">Type your name:</label>
             <input type="text" id="name" class="input-field" />
-            <button class="submit-btn" onclick="create()">Create</button>
-        </div>
+            <button class="submit-btn" type="button" onclick="create()">Create</button>
+        </form>
 
         <p class="greeting-text">Hello <span id="add" class="name-placeholder"></span></p>
     </div>
